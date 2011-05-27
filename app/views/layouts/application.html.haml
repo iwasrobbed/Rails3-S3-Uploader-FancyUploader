@@ -1,0 +1,14 @@
+!!! Strict
+%html
+  %head
+    %title= "S3 Uploader Test App"
+    = stylesheet_link_tag "styles"
+    = javascript_include_tag( 'mootools.js', 
+                              'fancyupload/source/Fx.ProgressBar',
+                              'fancyupload/source/Swiff.Uploader', 
+                              'fancyupload/source/FancyUpload3.Attach', 
+                              'fancyupload/source/FancyUpload3.S3Uploader' )
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    
+  %body
+    = yield

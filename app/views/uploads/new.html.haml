@@ -1,0 +1,4 @@
+.tcenter.grayField.ral
+  %h2.borderBottom Upload Image
+  :plain
+    #{s3_uploader(:key => "test", :max_filesize => 5.gigabytes, :verbose => true)}
